@@ -1,25 +1,35 @@
-$light_theme: (
-  "bg": white,
-  "font-color": black
-);
-
-$dark_theme: (
-  "bg": black,
-  "font-color": white
-);
-
-.theme-light {
-  @each $key, $value in $light_theme {
-    #{key}: $value;
-  }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.theme-dark {
-  @each $key, $value in $dark_theme {
-    #{key}: $value;
-  }
+.placeholder {
+  margin-top: 400px;
 }
 
-.animate-colors-transition {
-  transition: color 0.5s, background 0.5s;
+
+
+.name h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: fade-in 3.5s
+}
+
+.toc {
+  opacity: 0;
+  animation-duration: 3.5s;
+  animation-delay: 2s;
+  animation-name: fade-in;
+}
+
+/* The typing effect */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
