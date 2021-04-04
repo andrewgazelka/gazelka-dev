@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+$background-color: #272c35;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+  background-color: $background-color;
+  color: #fefefe;
+  font-family: Montserrat, sans-serif;
+  font-size: 100px;
+}
